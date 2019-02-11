@@ -7,7 +7,7 @@ There are BTC, ETH, XRP, LTC, EOS, IOT's tradingview graphs. (unfortunately.) Ot
 
 # Save Function
 
-With CTRL+S, you can save coin data as text file.
+With CTRL+S, you can save the coin data into the text file. It gives a name automatically. (Giving name as date time actually.)
 
 # Internet Connection
 
