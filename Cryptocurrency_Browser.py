@@ -247,7 +247,7 @@ class Window(QtWidgets.QWidget):
     
         f.close()
         
-        fileName = "Save_File_{}.txt".format(now.strftime("%d-%m-%y_%H;%M;%S"))
+        fileName = "Save_File_{}.txt".format(now.strftime("%d-%m-%y_%H-%M-%S"))
         os.startfile(fileName)
         
         
