@@ -18,9 +18,9 @@ class Window(QtWidgets.QWidget):
     def init_ui(self):
         
         ## Menu bar area. ################################################
-        bar = QtWidgets.QMenuBar()
-        file = bar.addMenu('File')
-        about = bar.addMenu('About')
+        self.bar = QtWidgets.QMenuBar()
+        file = self.bar.addMenu('File')
+        about = self.bar.addMenu('About')
         
         goGitub_page = about.addAction('Author')
         saveData = file.addAction('Save As Text File')
@@ -224,8 +224,10 @@ class Window(QtWidgets.QWidget):
         self.coinCirculatingSupply.setStyleSheet("QLabel {color: #FF0000;}")
         self.confirmButton.setStyleSheet("QPushButton {background: #444444; color: #FFE400;}")
         self.showGraphButton.setStyleSheet("QPushButton {background: #444444; color: #FFE400;}")
-            
-            
+        
+        ## Menu bar colors & fonts adjustment.
+        self.bar.setStyleSheet("QMenuBar {background: #073D5B; color: #FFE400;}")
+        self.bar.setFont(self.menu_bar_font)
             
     def browseMyGithubPage(self):
             url = "https://github.com/ethemguner"
