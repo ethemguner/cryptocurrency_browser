@@ -238,7 +238,7 @@ class Window(QtWidgets.QWidget):
                 
         with open("Save_File_{}.txt".format(now.strftime("%d-%m-%y_%H-%M-%S")), 'w') as f:
            f.write("### Coin: {}\n".format(self.name[currentIndex].get_text().split()))
-           f.write("### Prince: {}\n".format(" ".join(self.price[currentIndex].get_text().split())))
+           f.write("### Price: {}\n".format(" ".join(self.price[currentIndex].get_text().split())))
            f.write("### Market Cap: {}\n".format(" ".join(self.market_cap[currentIndex].get_text().split())))
            f.write("### Volume (24h): {}\n".format(" ".join(self.volume24h[currentIndex].get_text().split())))
            f.write("### Circulating Supply: {}\n".format(" ".join(self.circulatingSupply[currentIndex].get_text().split())))
